@@ -1,0 +1,136 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Luke Alvarez}}\\
+	New York $\cdot$ Lukemcp45@gmail.com $\cdot$ 9143103734 $\cdot$ https://sites.google.com/view/luke-alvarez/home\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Lehman College}\\
+BS Computer Science \hfill Sep 2015 - May 2019\\
+\vspace{2mm}
+\textbf{Lehman College}\\
+Masters Mathematics Ed. \hfill Sep 2019 - May 2020\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work}
+\vspace{1mm}
+
+\textbf{Middletown City School District} \hfill Middletown, NY\\
+\textit{Computer Science Teacher} \hfill Sep 2020 - Mar 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Brought cutting edge CS education down to the middle school level for the first time in district
+	\item Created and ran an Esports program that had a majority of players enter below the 40th percentile and within one season 90\% of players reach above the 80th percentile of their games ranked system.
+	\item Multiple interstate Esport tournament first place wins against hundreds of competitors .
+	\item Established Robotics Summer camp, where 7th and 8th graders went from never coding to building and coding autonomous battlebots in one week.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & Java, Python, JavaScript, Block Based Languages, Solidity, LaTeX, HTML        \\
+	Misc:                  & Reasoning, Communication, Problem Solving, Continuous Learning, Collaboration \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{RyanRoaster}} {\sl Node.Js, JavaScript, API calls} \hfill https://github.com/LukeMcPartlan/DiscordRoastBot\\
+A discord bot featuring a Node.JS backend that uses Discord API and OpenAI API calls to respond to discord messages with rude remarks about my brother!\\
+\vspace*{2mm}
+{\textbf{Game Engine}} {\sl Java} \hfill https://www.youtube.com/watch?v=Q5191kdaQ3E\\
+A game engine and games built in in, built using Java Applet, originally built for Activision-Blizzard during a final interview round.\\
+\vspace*{2mm}
+{\textbf{Personal Website}}\hfill https://sites.google.com/view/luke-alvarez/home\\
+Personal site highlighting my accomplishments in further detail.\\
+\vspace*{2mm}
+{\textbf{Solidity Contracts}} {\sl Solidity} \hfill https://github.com/LukeMcPartlan/SolTestFiles\\
+A collection of practice contracts I made and pushed onto the Goerli test fork of the Ethereum blockchain.\\
+\vspace*{2mm}
+
+\header{Awards}
+\textbf{Orange and Rockland County Certificate of Excellence and Grant} \hfill Orange and Rockland County\\
+Recognized for outstanding achievement in STEM education. \$1000 Grant. \hfill June 2021\\
+\vspace*{2mm}
+\textbf{AlgoExpert Certificate} \hfill AlgoExpert.io\\
+Certification showing completion of the Algorithm Expert Curriculum \hfill March 2023\\
+\vspace*{2mm}
+\textbf{BlockChain Expert Certificate} \hfill AlgoExpert.io\\
+Certification showing completion of the Blockchain Expert Curriculum \hfill April 2023\\
+\vspace*{2mm}
+
+\ 
+\end{document}
